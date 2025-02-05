@@ -191,7 +191,12 @@
 											"pm.test(\"Message equals: Car added successfully\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.message).to.eql(\"Car added successfully\");",
-											"});"
+											"});",
+											"",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.have.header(\"Content-Type\");",
+											"});",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {}
