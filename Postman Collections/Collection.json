@@ -31,6 +31,9 @@
 											"    pm.response.to.have.header(\"Content-Type\");",
 											"});",
 											"",
+											"pm.test(\"Status code name has string OK\", function () {",
+											"    pm.response.to.have.status(\"OK\");",
+											"});",
 											""
 										],
 										"type": "text/javascript",
