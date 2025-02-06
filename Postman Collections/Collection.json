@@ -755,6 +755,10 @@
 										"exec": [
 											"pm.test(\"Status code is 403\", function () {",
 											"    pm.response.to.have.status(403);",
+											"});",
+											"",
+											"pm.test(\"Status code name has string Forbidden\", function () {",
+											"    pm.response.to.have.status(\"Forbidden\");",
 											"});"
 										],
 										"type": "text/javascript",
@@ -765,8 +769,11 @@
 									"listen": "prerequest",
 									"script": {
 										"id": "5c9eb0f8-b11d-4a5f-b2f4-536864a6cc37",
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
 									}
 								}
 							],
